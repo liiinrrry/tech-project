@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>林芮語的個人網頁</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background: linear-gradient(-45deg, #FAD0C4, #FFB6C1, #C0E8D5, #A3D8F4);
+            background-size: 400% 400%;
+            animation: gradient-animation 15s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-card {
+            transition: all 0.3s ease;
+        }
+        .link-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-icon {
+            filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+            .link-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 text-gray-800">
+    <div class="max-w-md w-full p-6 bg-white bg-opacity-80 backdrop-blur-sm rounded-3xl shadow-2xl text-center">
+        <!-- Profile Section -->
+        <div class="flex flex-col items-center mb-8">
+            <img src="https://placehold.co/150x150/FFB6C1/FFFFFF?text=芮語" alt="個人頭像" class="profile-image rounded-full mb-4">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-1">林芮語 | 城市探險家</h1>
+            <p class="text-lg sm:text-xl font-medium text-gray-600">熱衷於發掘城市美食，也沉浸在韓流音樂與男團的魅力中！</p>
+        </div>
+
+        <!-- Linktree-style Links Section -->
+        <div class="space-y-4">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/your_instagram_id" target="_blank" class="link-card flex items-center justify-center w-full bg-pink-400 text-white py-3 px-6 rounded-full font-bold shadow-md hover:bg-pink-500 transition-colors">
+                <i class="fab fa-instagram text-xl mr-3 link-icon"></i>
+                <span>追蹤我的探店日常</span>
+            </a>
+
+            <!-- K-Pop Fandom Link -->
+            <a href="https://www.spotify.com/your_playlist" target="_blank" class="link-card flex items-center justify-center w-full bg-purple-500 text-white py-3 px-6 rounded-full font-bold shadow-md hover:bg-purple-600 transition-colors">
+                <i class="fas fa-compact-disc text-xl mr-3 link-icon"></i>
+                <span>我的追星筆記與歌單</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/your_github_id" target="_blank" class="link-card flex items-center justify-center w-full bg-gray-800 text-white py-3 px-6 rounded-full font-bold shadow-md hover:bg-gray-900 transition-colors">
+                <i class="fab fa-github text-xl mr-3 link-icon"></i>
+                <span>看看我的程式專案</span>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:your_email@example.com" class="link-card flex items-center justify-center w-full bg-blue-500 text-white py-3 px-6 rounded-full font-bold shadow-md hover:bg-blue-600 transition-colors">
+                <i class="fas fa-envelope text-xl mr-3 link-icon"></i>
+                <span>聯絡我</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/your_linkedin_id" target="_blank" class="link-card flex items-center justify-center w-full bg-sky-600 text-white py-3 px-6 rounded-full font-bold shadow-md hover:bg-sky-700 transition-colors">
+                <i class="fab fa-linkedin text-xl mr-3 link-icon"></i>
+                <span>認識我</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
